@@ -1,0 +1,31 @@
+<html>
+<head>
+<title> bartek kropacz </title>
+   <script type="text/javascript">
+   function pociag(przewoznik,kategoria,maksymalna_predkosc)
+    {
+    this.przewoznik=przewoznik;
+      this.kategoria=kategoria;
+  this.maksymalna_predkosc=maksymalna_predkosc;
+    }
+
+    pociag.prototype.wypisz = function () //definicja metody
+   {
+    alert(this.przewoznik + ' ' + this.kategoria+ ' ' + this.maksymalna_predkosc);
+      };
+
+    var pociag1 = new pociag("SKM", "Sprinter", "120km/h"); 
+    var pociag2 = new pociag('Polregio', 'Regio', '160km/h');
+    pociag1.wypisz(); 
+    pociag2.wypisz();
+      document.write("dostęp do właściwości"+"<br>");
+
+ document.write("Pociag pierwszy"+" &nbsp;Przewoźnik: "+pociag1.przewoznik+" &nbsp;Kategoria: "+pociag1.kategoria+" &nbsp;Max predkość: "+pociag1.maksymalna_predkosc+"<br>");
+    document.write("Pociag drugi"+" &nbsp;Przewoźnik: "+pociag2.przewoznik+" &nbsp;Kategoria: "+pociag2.kategoria+" &nbsp;Max predkość: "+pociag2.maksymalna_predkosc);
+ </script>
+</head>
+<body>
+ <br>
+ programowanie obiektowe
+</body>
+</html>
