@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h2{
+            color: green; 
+            font-size: 54px;
+        }
+        body{
+            background-color: silver;
+        }
+        h3{
+            color: red;
+            font-size: 50px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        var liczba1=6, liczba2=13, liczba3=7, liczba4=11;
+        document.write("<h2> Moje imie i nazwisko to Bartek Kropacz <br> liczba 1= "+liczba1+" <br> liczba 2= "+liczba2+" <br> liczba 3= "+liczba3+" <br> liczba 4= "+liczba4+" <br></h2>" );
+        
+        document.write("<h3> ---menu--- <br> 3 - wyświetlenie teorii o operatorach <br> 29 - cy liczba należy do przedziału("+liczba1+";"+liczba2+") <br> 58 - czy liczb należy do przedziału(-&#8734;;"+liczba3+") lub ["+liczba4+";+&#8734;)</h3>");
+        
+        var opcja=parseFloat(prompt("Podaj opcje= "));
+
+        if(opcja==3){
+            document.write("<h2>Jesteś w opcja 3 --> teoria");
+        }else if((opcja>7)&&(opcja<14)){
+            document.write("<h2>Jesteś w opcja 29 --> przedział");
+        }
+        
+        else if(opcja==58){
+            document.write("<h2>Jesteś w opcja 58 --> teoria");
+        }else{
+            document.write("<h3>Nie ma takiej opcji</h3>");
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
